@@ -1,6 +1,7 @@
 #!/bin/bash
 
-docker build -t="wurstmeister/storm" storm
-docker build -t="wurstmeister/storm-nimbus" storm-nimbus
-docker build -t="wurstmeister/storm-supervisor" storm-supervisor
-docker build -t="wurstmeister/storm-ui" storm-ui
+#docker build -t="registry.steelhouse.com/ubuntu-java-gradle" base
+docker build -t="registry.steelhouse.com/storm:1.0.1" storm
+docker build -t="registry.steelhouse.com/storm-nimbus:1.0.1" storm-nimbus
+docker build -t="registry.steelhouse.com/storm-supervisor:1.0.1" storm-supervisor
+docker build -t="registry.steelhouse.com/storm-ui:1.0.1" storm-ui

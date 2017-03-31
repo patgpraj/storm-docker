@@ -1,5 +1,5 @@
-FROM wurstmeister/storm:0.9.4
-MAINTAINER Wurstmeister
+FROM registry.steelhouse.com/storm:1.0.1
+MAINTAINER steelhouse
 
 EXPOSE 6700
 EXPOSE 6701
