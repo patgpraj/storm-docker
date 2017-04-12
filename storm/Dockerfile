@@ -1,6 +1,6 @@
-FROM registry.steelhouse.com/ubuntu-java-gradle
+FROM steelhousedev/ubuntu-java-gradle
 
-#FROM registry.steelhouse.com/java8base
+#FROM steelhousedev/java8base
 #FROM wurstmeister/base
 
 MAINTAINER steelhouse

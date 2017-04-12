@@ -7,7 +7,7 @@ services:
       - "2181:2181"
       - "22"
   nimbus:
-    image: registry.steelhouse.com/storm-nimbus:1.0.1
+    image: steelhousedev/storm-nimbus:1.0.1
     ports:
       - "3773:3773"
       - "3772:3772"
@@ -19,7 +19,7 @@ services:
     links:
       - zookeeper:zk
   supervisor:
-    image: registry.steelhouse.com/storm-supervisor:1.0.1
+    image: steelhousedev/storm-supervisor:1.0.1
     ports:
       - "8000"
       - "22"
@@ -30,7 +30,7 @@ services:
       - nimbus:nimbus
       - zookeeper:zk
   ui:
-    image: registry.steelhouse.com/storm-ui:1.0.1
+    image: steelhousedev/storm-ui:1.0.1
     ports:
       - "8080:8080"
       - "22"
